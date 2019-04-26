@@ -1,0 +1,65 @@
+baseurl = "https://road907.com/"
+title = "nil"
+theme = "ghostwriter"
+languageCode = "en-us"
+copyright = "Road907"
+googleAnalytics = "Road907"
+disqusShortname = "Road907"
+
+[Privacy]
+
+[Privacy.disqus]
+    disable = true
+
+[Privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+
+[Author]
+    name = "Road907"
+    profile = "nil"
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    intro = true
+    headline = "Road907"
+    description = "Zen of science, technology and philosophy"
+    github = "https://github.com/road907/website"
+    gplus = "https://google.com/+XXX"
+    twitter = "https://twitter.com/XXX"
+    email = "hit.lijun@gmail.com"
+    opengraph = true
+    shareTwitter = true
+    shareFacebook = true
+    shareGooglePlus = true
+    shareLinkedIn = false
+    dateFormat = "Mon, Jan 2, 2006"
+    highlightJsUrl = ""
+    highlightJsLocalUrl = ""
+    exponeaJsUrl = ""
+    exponeaTarget = ""
+    exponeaToken = ""
+    exponeaTrackVisits = false
+    readingTime = true
+    readingTimeText = "Estimated reading time:"
+
+[Permalinks]
+    post = "/:year/:month/:day/:filename/"
+
+[[menu.main]]
+    name = "主页"
+    url = "/"
+    weight = 2
+
+[[menu.main]]
+    name = "活动"
+    url = "/project/"
+    weight = 2
+
+[[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 3
