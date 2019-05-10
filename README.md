@@ -14,4 +14,4 @@ We don't want to change this world, just make it fun.
 
 # Meet
 
-1. Every Friday Evening
+1. Every Friday Evening :punch:
