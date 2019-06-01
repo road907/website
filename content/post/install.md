@@ -7,7 +7,7 @@
 那么，这篇文章将梳理这几条命令背后做了什么， 也就是Debian软件管理的大概了。
 
 Debian 包管理层次:
-
+![Debian 包管理层次](https://picasaweb.google.com/107668028079061429913/6697537151714299713#6697537152521090898 "debian-pkgs")
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODc4OTY3XX0=
+eyJoaXN0b3J5IjpbMTAzNjQ3NjAzMF19
 -->
