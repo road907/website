@@ -6,7 +6,8 @@
      apt-get install kubelet 
 那么，这篇文章将梳理这几条命令背后做了什么， 也就是Debian软件管理的大概了。
 
+Debian 包管理层次:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjY3NDc2N119
+eyJoaXN0b3J5IjpbMTQ3ODc4OTY3XX0=
 -->
