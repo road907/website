@@ -1,7 +1,7 @@
 ---
 title: "计算机考古之软件安装与卸载"
 date: 2019-06-16T18:17:07+08:00
-draft: true
+draft: false
 ---
 
 
