@@ -17,7 +17,7 @@ draft: false
 
 那么，这篇文章将梳理这几条命令背后做了什么， 也就是Debian软件管理的大概了。
 此问题，可分为四个层次：
-<center>![debian 包管理层次](/layers.jpg)</center>
+![debian 包管理层次](/layers.jpg)
 
 ## Filesystem Hierarchy Standard
 
@@ -34,7 +34,7 @@ draft: false
 Debian 的软件包即一个包含了安装内容、安装信息的归档文件。 
 可以用 sudo apt-get download kubelet ， 把要安装的.deb文件下载下来。然后打开这个归档，可以看到如下结构：
 
-<center>![debian package content](/deb-files.jpeg)</center>
+![debian package content](/deb-files.jpeg)
 
 - debian-binay:  只有一行内容， 指示这个.deb包格式的版本号， 目前为2.0
 - data.tar.xz:   为安装的内容， 可见他是按上述FHS来做的， 包含一个可执行文件kubelet 和  一个systemd配置。
@@ -95,7 +95,7 @@ dpkg 是debian用来管理本地软件的。`apt-get install`在本地安装时�
 
 分布式软件管理是完整的一套机制，可想到包括： 软件仓库、版本管理、依赖管理。
 APT只是Debian分布式软件管理的客户端。
-<center>![distributed pkg mgm](/distributed-packages.jpg)</center>
+![distributed pkg mgm](/distributed-packages.jpg)
 
 如上， 远程仓库核心的两份数据是，它托管的所有应用包和应用包的索引。
 apt 会在本地通过sources.list文件配置可用仓库的地址。
@@ -103,7 +103,7 @@ apt 会在本地通过sources.list文件配置可用仓库的地址。
 `apt-get install` 就是从响应的仓库拉取应用并且调用dpkg安装了。
 
 以阿里云的镜像仓库`https://mirrors.aliyun.com/kubernetes`为例，其目录结构大概如下：
-<center>![ali-repos](/ali-pkg-repos.png)</center>
+![ali-repos](/ali-pkg-repos.png)
 
 - dists:  内部存储索引信息，不过不是把所以索引放到一个packages.gz文件，而是又有两个层次。
 - pool:   存储所有应用包啦。
@@ -145,7 +145,7 @@ apt-get update
 mirrors.aliyun.com_kubernetes_apt_dists_kubernetes-xenial_main_binary-amd64_Packages
 ```
 ，打开看, 是各种包的索引信息：
-<center>![apt-indexes](/apt-pkg-indexes.png)</center>
+![apt-indexes](/apt-pkg-indexes.png)
 `apt-get install kubelet` , 根据索引信息的filename拉取应用包并安装。
 
 参考：
