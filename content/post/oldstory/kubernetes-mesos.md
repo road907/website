@@ -26,3 +26,5 @@ Mesos从一开始就应该持有拥抱kubernetes的姿态，而不是竞争，me
 3. 资源利用率： 因为是真正的按需分配，所以就没有资源空洞，这正是mesos擅长的。
 
 ![k8s-mesos](/sharing.png)
+
+(by Mesosphere)
